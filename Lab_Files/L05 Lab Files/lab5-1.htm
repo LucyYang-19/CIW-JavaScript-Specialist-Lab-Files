@@ -4,7 +4,7 @@
 <title>Lab 5-1</title>
 
 <script type="text/Javascript">
-<!--
+//<!--
 
 /************************************************
   The checkGrade() function tests a numerical
@@ -22,14 +22,18 @@ function checkGrade(form) {
   their grade is an A.
 *****************************************************/
  
+  if (myGrade >= 91){
+    alert("Your grade is an A")
+ }
+  else if ((myGrade>= 81) || (myGrade <= 90)){
+    alert("You grade is a B")
+  }
+ else {
+   alert("you gade is a C or lower")
+ }
  
- 
- 
- 
- 
- 
+  
 }//End checkGrade() function
- 
 
 //-->
 </script>
