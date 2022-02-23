@@ -3,8 +3,8 @@
 <head>
 <title>Lab 6-4</title>
 
-<script type="text/javascript">
-//<!--
+<script>
+
 
   function writeToDocument(){
     var textColor, backColor, pageTitle;
@@ -17,22 +17,19 @@
 
     pageContent = "<html><head><title>";
     pageContent += pageTitle + "</title>";
-    pageContent += "<script>alert('The page ' + document.title + ' was created: ' + document.lastModified)</script>";
-    pageContent += "</head><body><strong>";
-    pageContent += "</strong></body></html>";
+    pageContent += `<script>alert("The page " + document.title + " was created: " + document.lastModified)<\/script>`;
+    pageContent += `</head><body><strong>`;
+    pageContent += "<\/strong><\/body><\/html>";
 
     docWindow = open("", "docWin" ,"width=250  ,height=150 , resizable=1 , status=1")
     // Write your code here
-    with(docWindow.document){
-      docWindow.open();
-      backColor = bgcolor;
-      textColor = fgcolor;
-      document.write(pageContent);
-      docWindow.close();
+
+
+    
     }
-  }
   
-//-->
+  
+
 </script>
 </head>
 
