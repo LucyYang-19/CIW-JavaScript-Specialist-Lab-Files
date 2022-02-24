@@ -23,7 +23,12 @@
 
     docWindow = open("", "docWin" ,"width=250  ,height=150 , resizable=1 , status=1")
     // Write your code here
-
+      with(docWindow.document){
+        
+      
+        document.write(pageContent,bgColor= backColor,fgColor = textColor);
+         docWindow = close("", "docWin" ,"width=250  ,height=150 , resizable=1 , status=1")
+      }
 
     
     }
