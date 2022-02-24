@@ -9,9 +9,14 @@
 
 
     function display_image(selectedImage) {
-  
+
         var selectionName = selectedImage.options[selectedImage.selectedIndex].text;
-        var selection = selectedImage.options[selectedImage.selectedIndex].value;}
+        var selection = selectedImage.options[selectedImage.selectedIndex].value;
+      
+}
+
+     
+
 </script>
 </head>
 <body>
@@ -20,11 +25,12 @@
 <p>
 Select an image:
 </p>
-<select name="images">
-	<option value="" />
-    <option value="" />
+<select name="images" onchange= display_image();>
+	<option value="Fish" >Fish</option>
+    <option value="Avacado">Avacado</option>
 </select>
 
 
 </body>
 </html>
+
