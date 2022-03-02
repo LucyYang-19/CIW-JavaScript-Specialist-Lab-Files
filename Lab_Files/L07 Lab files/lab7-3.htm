@@ -5,10 +5,20 @@
 <title>Lab 7-3</title>
 
 <script type="text/javascript">
-<!--
+//<!--
 var str = "Mark, Pete, Emily, Adam";
 
 // Your code here
+var split = str.split("   ");
+document.write(split);
+
+
+var name = "Pete";
+var newNames = str.replace(name, "Betsy");
+document.write(newNames);
+
+var position = str.search("Emily");
+document.write(position);
 
 //-->
 </script>
