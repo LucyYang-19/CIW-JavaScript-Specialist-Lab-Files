@@ -10,9 +10,10 @@
   // Complete the employeeObject constructor
   // Remember to add a method called showEmployee
   function employeeObject (name,department,extension) {
-    this.name = name;
+    this.name = name ;
     this.department = department;
     this.extension = extension;
+    this.showEmployee = showEmployee;
     }
   
       // Instantiate 3 instances of employeeObject
@@ -28,9 +29,9 @@
     function showEmployee() {
       var info = "";
   // Complete the showEmployee() function
-   info += "Employee: " + employees[i].name + "\n";
-  info += "Department: " + employees[i].department +  "\n";
-  info += "Extension: " + employees[i].extension + "\n\n";
+   info += "Employee: " + this.name + "\n";
+  info += "Department: " + this.department +  "\n";
+  info += "Extension: " + this.extension + "\n";
     
     
       alert(info);
@@ -41,7 +42,7 @@
     for (var i = 1; i < len; i++) {
         info += "Employee: " + employees[i].name + "\n";
         info += "Department: " + employees[i].department +  "\n";
-    info += "Extension: " + employees[i].extension + "\n\n";
+       info += "Extension: " + employees[i].extension + "\n\n";
       }
     
     alert(info);
