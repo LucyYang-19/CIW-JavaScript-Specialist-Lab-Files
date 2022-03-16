@@ -5,7 +5,7 @@
 <title>Lab 9-1</title>
 
 <script type="text/javascript">
-<!--
+//<!--
 function changeButton()
 {
   if(document.getElementById('radiobuttonWebdev').checked === true)
@@ -20,9 +20,27 @@ function changeButton()
 	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
 	alert("Hello " + header);
   }
+  if(document.getElementById('radiobuttonTwitch').checked === true)
+  {
+	radioButton = document.getElementById('radiobuttonTwitch').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Twitch!?!";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('radioButtonMozilla').checked === true)
+  {
+	radioButton = document.getElementById('radioButtonMozilla').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Devloper Mozilla!";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('radioButtonWeather').checked === true)
+  {
+	radioButton = document.getElementById('radioButtonWeather').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Weather Check!";
+	alert("Hello " + header);
+  }
   getTest();
 }
--->
+//-->
 </script>
 </head>
 
@@ -33,13 +51,13 @@ function changeButton()
 <p>Please select your favorite type of Web site:</p>
 <input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" checked>Web Development</input><br />
 <input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government</input><br />
-<input id="a" type="radio" name="group1" value="A">A</input><br />
-<input id="b" type="radio" name="group1" value="B">B</input><br />
-<input id="c" type="radio" name="group1" value="C">C</input><br />
+<input id="radiobuttonTwitch" type="radio" name="group1" value="Twitch">Twitch</input><br />
+<input id="radioButtonMozilla" type="radio" name="group1" value="Developer_Mozilla">Developer Mozilla</input><br />
+<input id="radioButtonWeather" type="radio" name="group1" value="Weather">Weather</input><br />
 
 
 <script type="text/javascript">
-<!--
+//<!--
 function getTest()
 {
   document.write("<h3>CIW JavaScript Specialist</h3>");
@@ -54,8 +72,22 @@ function getTest()
   {
 	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
   }
+  if(radioButton == "Twitch")
+  {
+	document.write("<p>Here's a link to Twitch:</p><a href=https://www.twitch.tv/>Twitch</a>");
+  }
+	
+  if(radioButton == "Developer_Mozilla")
+  {
+	document.write("<p>Here's a great site for coding help:</p><a href=http://www.whitehouse.gov/>Developer Mozilla</a>");
+  }
+  
+  if(radioButton == "Weather")
+  {
+	document.write("<p>Weather Check</p><a href=https://weather.com/> Weather </a>");
+  }
 }
--->
+//-->
 </script>
 
 <p>
