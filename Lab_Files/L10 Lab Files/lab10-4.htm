@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8" />
+<meta charset="utf-8" />
 <title>Lab 10-4</title>
 
 <script type="text/javascript">
-<!--
+//<!--
 
   function isSelected(form) {
     var len = form.mySelect.length;
   var theSelections = "Selected values:\n";
   
 // Create for loop
-  
+  for(var i = 0; i<len ; i++){
+      if (document.myForm.mySelect.options[i].selected){
+        theSelections += document.myForm.mySelect.options[i].text + '\n';
+      }
+  }
   
   
   
   // Display selections
-
+  alert(theSelections )
   } 
 
 //-->

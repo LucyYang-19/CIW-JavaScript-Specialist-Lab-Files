@@ -5,22 +5,24 @@
 <title>Lesson 10 Application Project</title>
 
 <script type="text/javascript">
-<!--
+//<!--
 
 
     function validate(form) {
+        var str = '';
+        var elem = document.getElementById('ccForm').elements;
+        for(var i = 0; i < elem.length; i++)
+        {
+            str += "<strong>Name:</strong>" + elem[i].name + "&nbsp;&nbsp;";
 
-
-
-
-
-
-
-
-
+            if (elem[i].value.length < 1) {
+                alert("Enter a valid number for the field: " + elem[i].name);
+                return false;
+            }
+        }
+       
     }
 
-  
 
 //-->
 </script>
@@ -31,7 +33,7 @@
 
 <h3>CIW JavaScript Specialist</h3>
 <hr />
-<form name="ccForm" action="post">
+<form id= "ccForm" name="ccForm" action="post">
 <p>
 <input type="radio" name="ccard" value="visa" />
 Visa
